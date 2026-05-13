@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+let resend: Resend | null = null;
 
 export const sendEmail = async ({
   to,
@@ -11,12 +11,18 @@ export const sendEmail = async ({
   subject: string;
   html: string;
 }) => {
-  if (!process.env.RESEND_API_KEY) {
+  const apiKey = process.env.RESEND_API_KEY;
+  
+  if (!apiKey) {
     console.warn('RESEND_API_KEY not set. Skipping email send.');
     return { success: false, error: 'No API key' };
   }
 
   try {
+    if (!resend) {
+      resend = new Resend(apiKey);
+    }
+
     const data = await resend.emails.send({
       from: 'SmileCare Clinic <onboarding@resend.dev>', // Use resend's default onboarding domain for testing
       to: [to],
