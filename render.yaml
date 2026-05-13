@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: smilecare
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run serve
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+    plan: free

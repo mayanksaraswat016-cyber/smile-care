@@ -1,0 +1,135 @@
+export const services = [
+  {
+    id: '1',
+    name: 'Dental Checkup',
+    category: 'Preventive',
+    duration: '60 min',
+    price: 'From $85',
+    description:
+      'Comprehensive oral examination, X-rays, and professional cleaning to keep your teeth healthy.',
+    popular: false,
+    color: 'bg-blue-50 text-blue-600',
+  },
+  {
+    id: '2',
+    name: 'Teeth Whitening',
+    category: 'Cosmetic',
+    duration: '90 min',
+    price: 'From $299',
+    description:
+      'Professional in-office whitening that delivers up to 8 shades brighter in a single session.',
+    popular: true,
+    color: 'bg-amber-50 text-amber-600',
+  },
+  {
+    id: '3',
+    name: 'Dental Fillings',
+    category: 'Restorative',
+    duration: '45 min',
+    price: 'From $150',
+    description:
+      'Tooth-colored composite fillings that restore cavities seamlessly with your natural enamel.',
+    popular: false,
+    color: 'bg-teal-50 text-teal-600',
+  },
+  {
+    id: '4',
+    name: 'Root Canal',
+    category: 'Restorative',
+    duration: '90 min',
+    price: 'From $850',
+    description:
+      'Pain-free root canal therapy using rotary endodontics and digital X-ray guidance.',
+    popular: false,
+    color: 'bg-red-50 text-red-600',
+  },
+  {
+    id: '5',
+    name: 'Tooth Extraction',
+    category: 'Surgical',
+    duration: '30 min',
+    price: 'From $200',
+    description:
+      'Simple and surgical extractions performed with precision and post-op care instructions.',
+    popular: false,
+    color: 'bg-slate-50 text-slate-600',
+  },
+  {
+    id: '6',
+    name: 'Dental Implants',
+    category: 'Surgical',
+    duration: '2–3 visits',
+    price: 'From $2,200',
+    description:
+      'Titanium implants that look, feel, and function like natural teeth — built to last decades.',
+    popular: true,
+    color: 'bg-navy-50 text-navy-600',
+  },
+  {
+    id: '7',
+    name: 'Braces',
+    category: 'Orthodontic',
+    duration: '12–24 mo',
+    price: 'From $3,500',
+    description:
+      'Traditional metal and ceramic braces for children and adults with complex alignment needs.',
+    popular: false,
+    color: 'bg-purple-50 text-purple-600',
+  },
+  {
+    id: '8',
+    name: 'Invisalign',
+    category: 'Orthodontic',
+    duration: '6–18 mo',
+    price: 'From $4,200',
+    description:
+      'Clear removable aligners for discreet, comfortable teeth straightening without metal wires.',
+    popular: true,
+    color: 'bg-cyan-50 text-cyan-600',
+  },
+  {
+    id: '9',
+    name: 'Veneers',
+    category: 'Cosmetic',
+    duration: '2 visits',
+    price: 'From $1,100',
+    description:
+      'Porcelain veneers crafted to perfect your smile — covering chips, stains, and gaps.',
+    popular: false,
+    color: 'bg-pink-50 text-pink-600',
+  },
+  {
+    id: '10',
+    name: 'Crowns',
+    category: 'Restorative',
+    duration: '2 visits',
+    price: 'From $950',
+    description:
+      'Same-day CEREC crowns available — restore broken or severely decayed teeth in one visit.',
+    popular: false,
+    color: 'bg-yellow-50 text-yellow-600',
+  },
+  {
+    id: '11',
+    name: 'Dentures',
+    category: 'Restorative',
+    duration: '3–4 visits',
+    price: 'From $1,800',
+    description:
+      'Full and partial dentures custom-fitted for comfort, function, and natural appearance.',
+    popular: false,
+    color: 'bg-orange-50 text-orange-600',
+  },
+  {
+    id: '12',
+    name: 'Emergency Care',
+    category: 'Emergency',
+    duration: 'Same day',
+    price: 'From $150',
+    description:
+      'Urgent dental care for toothache, broken teeth, lost fillings, and trauma — call now.',
+    popular: false,
+    color: 'bg-red-50 text-red-700',
+    urgent: true,
+  },
+];

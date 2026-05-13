@@ -1,0 +1,47 @@
+export const dentists = [
+  {
+    id: '1',
+    name: 'Dr. Priya Sharma',
+    title: 'DDS, MS',
+    specialization: 'General & Cosmetic Dentistry',
+    experience: '14 years',
+    languages: 'English, Hindi, Gujarati',
+    bio: 'Dr. Sharma leads our dental team with expertise in cosmetic procedures and comprehensive care. She completed her training at NYU College of Dentistry.',
+    photo: 'https://img.rocket.new/generatedImages/rocket_gen_img_11129419a-1772852838420.png',
+    photoAlt:
+      'Dr. Priya Sharma, female dentist with dark hair wearing white lab coat and stethoscope',
+    badge: 'Lead Dentist',
+    badgeColor: 'bg-teal-100 text-teal-700',
+    nextSlot: 'Today, 3:30 PM',
+  },
+  {
+    id: '2',
+    name: 'Dr. Emeka Okafor',
+    title: 'DMD, PhD',
+    specialization: 'Orthodontics & Implants',
+    experience: '11 years',
+    languages: 'English, Igbo, French',
+    bio: 'Dr. Okafor is our implant specialist, trained at Johns Hopkins, with over 800 successful implant placements.',
+    photo: 'https://img.rocket.new/generatedImages/rocket_gen_img_10337129e-1772074664598.png',
+    photoAlt:
+      'Dr. Emeka Okafor, male dentist with close-cropped hair in navy scrubs smiling in clinic',
+    badge: 'Implant Specialist',
+    badgeColor: 'bg-navy-100 text-navy-700',
+    nextSlot: 'Tomorrow, 10:00 AM',
+  },
+  {
+    id: '3',
+    name: 'Dr. Mei-Ling Chen',
+    title: 'DDS',
+    specialization: 'Pediatric & Preventive',
+    experience: '9 years',
+    languages: 'English, Mandarin, Cantonese',
+    bio: 'Dr. Chen makes dental visits fun for kids and adults alike. Her preventive-first approach reduces long-term treatment needs.',
+    photo: 'https://img.rocket.new/generatedImages/rocket_gen_img_11ae2c4d2-1772086801082.png',
+    photoAlt:
+      'Dr. Mei-Ling Chen, female dentist in blue scrubs with friendly smile in pediatric dental office',
+    badge: 'Pediatric Expert',
+    badgeColor: 'bg-amber-100 text-amber-700',
+    nextSlot: 'Mon, 9:00 AM',
+  },
+];

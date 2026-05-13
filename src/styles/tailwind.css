@@ -1,0 +1,129 @@
+/* tailwindcss @tailwind directives - processed by PostCSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --primary: 213 74% 26%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 185 84% 37%;
+    --accent-foreground: 0 0% 100%;
+    --background: 210 40% 98%;
+    --foreground: 213 50% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 50% 15%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 213 20% 50%;
+    --border: 213 20% 88%;
+    --ring: 185 84% 37%;
+    --destructive: 0 72% 51%;
+    --warning: 38 92% 50%;
+    --success: 142 71% 45%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-primary-gradient {
+    background: linear-gradient(135deg, hsl(213, 74%, 26%), hsl(213, 74%, 18%));
+  }
+
+  .bg-teal-gradient {
+    background: linear-gradient(135deg, hsl(185, 84%, 37%), hsl(185, 84%, 28%));
+  }
+
+  .card-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(27, 58, 107, 0.12);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.4s ease forwards;
+  }
+
+  .animate-count-pulse {
+    animation: countPulse 0.6s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes countPulse {
+  0%, 100% { background-color: transparent; }
+  50% { background-color: hsl(185, 84%, 37%, 0.15); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 1; }
+  70% { transform: scale(1.1); opacity: 0; }
+  100% { transform: scale(0.95); opacity: 0; }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  border: 2px solid hsl(var(--accent));
+  animation: pulse-ring 2s ease infinite;
+}
